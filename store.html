@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Mart - Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('happy.jpg');
+            background-size: cover;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .filters {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .filters button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.2s;
+        }
+        .product-card img {
+            width: 100%;
+            height: 50%;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: #555;
+        }
+        .product-card .review {
+            font-style: italic;
+            color: #777;
+            margin: 10px 0;
+        }
+        .product-card button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="store.html" class="active">Store</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="watch.jpg" alt="Smart Watch">
+                <h3>Smart Watch</h3>
+                <p>Stay connected on the go</p>
+                <p class="review">"This watch is amazing! It keeps me connected all day." - Sarah</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="airpods.jpg" alt="Wireless Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>Experience true freedom</p>
+                <p class="review">"The sound quality is incredible. Highly recommend!" - John</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="jacket.jpg" alt="Designer Jacket">
+                <h3>Designer Jacket</h3>
+                <p>Style meets comfort</p>
+                <p class="review">"This jacket is so stylish and comfortable!" - Emily</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="sneakers.jpg" alt="Sneakers">
+                <h3>Sneakers</h3>
+                <p>Perfect for everyday wear</p>
+                <p class="review">"Super comfortable and great for daily use." - Mike</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="laptop.jpg" alt="Laptop">
+                <h3>High-Performance Laptop</h3>
+                <p>Work and play seamlessly</p>
+                <p class="review">"This laptop handles everything I throw at it!" - Anna</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="backpack.jpg" alt="Backpack">
+                <h3>Stylish Backpack</h3>
+                <p>Carry your essentials in style</p>
+                <p class="review">"Perfect size and looks great. Love it!" - David</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
